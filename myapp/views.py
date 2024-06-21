@@ -1,4 +1,5 @@
 from django.shortcuts import render , HttpResponse , redirect
+from .forms import email_form
 
 def main(request):
     return render(request , 'main.html')
@@ -17,3 +18,9 @@ def developers(request):
 
 def developers_2(request):
     return render(request, 'developers')
+
+
+def email_view(request):
+    context = {}
+    context['form'] = email_form()
+    return render(request , 'developers.html' , context)
