@@ -1,7 +1,10 @@
 from django.db import models
 
 # Create your models here.
+class email(models.Model):
+    email = models.EmailField(unique=True)
 
-class email_model(models.Model):
-    email_model_input = models.EmailField(max_length=150)
+
+    def __str__(self):
+        return self.email
     

@@ -1,6 +1,6 @@
 from django.shortcuts import render , HttpResponse , redirect
 from .forms import email_form
-from .models import email_model
+
 def main(request):
     return render(request , 'main.html')
 
@@ -20,21 +20,14 @@ def developers_2(request):
     return render(request, 'developers')
 
 
-def email_view(request):
-    #email_view = email_model.objects.get(id=id)
-    context = {}
-    context['form'] = email_form()
-
+def save_email(request):
     if request.method == 'POST':
-        forma = email_form(request.POST)
-        if forma.is_valid():
-            forma.save()
-
+        form = email_form(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('success')  # Redirect to a success page or another view
     else:
-        forma = email_form()
+        form = email_form()
+    return render(request, 'developers.html', {'form': form})
 
-    context['form'] = forma
-
-    return render(request , 'developers.html' , context )
-
-# ,{'email_view':email_view} 
+    

@@ -1,5 +1,7 @@
-from django import forms 
+from django import forms
+from .models import email
 
- 
-class email_form(forms.Form): 
-    email_field = forms.EmailField(max_length = 200)   
+class email_form(forms.ModelForm):
+    class Meta:
+        model = email 
+        fields = ['email']
