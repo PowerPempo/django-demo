@@ -25,9 +25,13 @@ def save_email(request):
         form = email_form(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('success')  # Redirect to a success page or another view
+            return redirect('success') 
     else:
         form = email_form()
     return render(request, 'developers.html', {'form': form})
 
+
+
+def success(request):
+    return render(request , 'success.html')
     
