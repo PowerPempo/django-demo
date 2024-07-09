@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Портфолио</title>
+    <title>Портфоліо</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./static/main.min.css">
+    <link rel="stylesheet" href="./static/main.css">
   </head>
   <body>
      <!-- Шапка -->
@@ -25,16 +25,16 @@
           <ul class="nav list">
             <li class="nav__item">
               <a class="nav__link link" href="./main"
-                >Студия</a
+                >Студія</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link link nav__link--current" href="./portfolio.html"
-                >Портфолио</a
+              <a class="nav__link link nav__link--current" href="./portfolio"
+                >Портфоліо</a
               >
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="./developers">Разработчики</a>
+              <a class="nav__link link" href="./developers">Розробники</a>
             </li>
           </ul>
         </nav>
@@ -42,7 +42,7 @@
           <li class="header-contact__item">
             <a class="header-contact__link link" href="mailto:info@devstudio.com"
               ><svg class="header-contact__icon" width="16" height="12">
-                <use href="./static/icons.svg#icon-envelope"></use>
+                <use href="../static/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -50,7 +50,7 @@
           <li class="header-contact__item">
             <a class="header-contact__link link" href="tel:+380961111111"
               ><svg class="header-contact__icon" width="10" height="16">
-                <use href="./static/icons.svg#icon-mobile"></use>
+                <use href="../static/icons.svg#icon-mobile"></use>
               </svg>
               +38 096 111 11 11</a
             >
@@ -58,7 +58,7 @@
         </ul>
         <button class="menu-open" data-menu-open>
         <svg class="menu-burger" width="24" height="16">
-          <use href="./static/images/icons.svg#icon-burger"></use>
+          <use href="/myapp/static/images/icons.svg#icon-burger"></use>
         </svg>
         </button>
       </div>
@@ -66,18 +66,18 @@
         <div>
           <button class="menu-close" data-menu-close>
             <svg class="menu-close" width="40" height="40">
-              <use href="./static/images/icons.svg#icon-close"></use>
+              <use href="/myapp/static/images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <ul class="mob-menu-list list">
             <li class="mob-menu-list__item">
-              <a class="mob-menu-list__link link " href="./main">Студия</a>
+              <a class="mob-menu-list__link link " href="./main">Студія</a>
             </li>
             <li class="mob-menu-list__item">
-              <a class="mob-menu-list__link link mob-menu-list__link--current" href="./portfolio.html">Портфолио</a>
+              <a class="mob-menu-list__link link mob-menu-list__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="mob-menu-list__item">
-              <a class="mob-menu-list__link link" href="">Контакты</a>
+              <a class="mob-menu-list__link link" href="">Контакти</a>
             </li>
           </ul>
         </div>
@@ -101,13 +101,13 @@
           <h1 hidden>Примеры работ</h1>
           <ul class="portfolio-btn-list list">
             <li class="portfolio-btn-item">
-              <button class="portfolio-btn" type="button">Все</button>
+              <button class="portfolio-btn" type="button">Усі</button>
             </li>
             <li class="portfolio-btn-item">
-              <button class="portfolio-btn" type="button">Веб-сайты</button>
+              <button class="portfolio-btn" type="button">Веб-сайти</button>
             </li>
             <li class="portfolio-btn-item">
-              <button class="portfolio-btn" type="button">Приложения</button>
+              <button class="portfolio-btn" type="button">Додатки</button>
             </li>
             <li class="portfolio-btn-item">
               <button class="portfolio-btn" type="button">Дизайн</button>
@@ -123,15 +123,15 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/our-people.jpg 1x,                   
-                    ./static/images/our-people-2x.jpg 2x
+                    ../static/images/our-people.jpg 1x,                   
+                    ../static/images/our-people-2x.jpg 2x
                   "
-                  src="./static/images/our-people.jpg"
+                  src="../static/images/our-people.jpg"
                   alt="фото сотрудников"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
                 </div>
               <div class="portfolio-border">
@@ -143,15 +143,15 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/ball.jpg 1x,                   
-                    ./static/images/ball-2x.jpg 2x
+                    ../static/images/ball.jpg 1x,                   
+                    ../static/images/ball-2x.jpg 2x
                   "
-                  src="./static/images/ball.jpg"
+                  src="../static/images/ball.jpg"
                   alt="парни играют в баскетбол"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text">Новий дизайнерський постер <span lang="en">"New Orlean vs Golden Star"</span> пропонує комплексні варіанти оформлення з різноманітним функціоналом та стилем.</p>
                 </div>
               </div>
                 <div class="portfolio-border">
@@ -166,21 +166,21 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/seafood.jpg 1x,                   
-                    ./static/images/seafood-2x.jpg 2x
+                    ../static/images/seafood.jpg 1x,                   
+                    ../static/images/seafood-2x.jpg 2x
                   "
-                  src="./static/images/seafood.jpg"
+                  src="../static/images/seafood.jpg"
                   alt="ресторан морепродуктов"
                   width="450"
                 />
                 <div class="portfolio-overlay">
 
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text">Новий додаток ресторану <span lang="en">"Seafood"</span> пропонує комплексні можливості з різноманітним функціоналом та сервісами. Він дозволить вам швидко і зручно ознайомитися з меню, зробити замовлення та отримати вичерпні відомості про страви та акції.</p>
                 </div>
               </div>
               <div class="portfolio-border">
                 <h2 class="portfolio-list-title">Ресторан <span lang="en">Seafood</span></h2>
-                <p class="portfolio-list-text">Приложение</p>
+                <p class="portfolio-list-text">Додаток</p>
               </div>
             </li>
 
@@ -188,15 +188,15 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/headphone.jpg 1x,                   
-                    ./static/images/headphone-2x.jpg 2x
+                    ../static/images/headphone.jpg 1x,                   
+                    ../static/images/headphone-2x.jpg 2x
                   "
-                  src="./static/images/headphone.jpg"
+                  src="../static/images/headphone.jpg"
                   alt="наушники"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text">Проєкт <span lang="en">'Prime'</span> допоможе вам розробити ефективні стратегії, провести детальний аналіз та підвищити результативність ваших кампаній.</p>
                 </div>
               </div>
               <div class="portfolio-border">
@@ -209,20 +209,20 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/2-box.jpg 1x,                   
-                    ./static/images/2-box-2x.jpg 2x
+                    ../static/images/2-box.jpg 1x,                   
+                    ../static/images/2-box-2x.jpg 2x
                   "
-                  src="./static/images/2-box.jpg"
+                  src="../static/images/2-box.jpg"
                   alt="две коробки"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text">Зручний інтерфейс і широкий функціонал допоможуть ефективно впорядковувати ваші проєкти, отримуючи вичерпні відомості про прогрес і статус кожного завдання.</p>
                 </div>
               </div>
               <div class="portfolio-border">
                 <h2 class="portfolio-list-title">Проект <span lang="en">Boxes</span></h2>
-                <p class="portfolio-list-text">Приложение</p>
+                <p class="portfolio-list-text">Додаток</p>
               </div>
             </li>
 
@@ -230,15 +230,15 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/screen.jpg 1x,                   
-                    ./static/images/screen-2x.jpg 2x
+                    ../static/images/screen.jpg 1x,                   
+                    ../static/images/screen-2x.jpg 2x
                   "
-                  src="./static/images/screen.jpg"
+                  src="../static/images/screen.jpg"
                   alt="экран"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text">Новий сайт <span lang="en">"Inspiration has no Borders"</span> пропонує унікальний контент, який надихає на творчість без обмежень. Різноманітні ідеї, статті та ресурси допоможуть вам відкрити нові горизонти та втілити свої задуми в життя, незалежно від кордонів.</p>
                 </div>
               </div>
               <div class="portfolio-border">
@@ -251,19 +251,19 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/book.jpg 1x,                   
-                    ./static/images/book-2x.jpg 2x
+                    ../static/images/book.jpg 1x,                   
+                    ../static/images/book-2x.jpg 2x
                   "
-                  src="./static/images/book.jpg"
+                  src="../static/images/book.jpg"
                   alt="книга"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text">Концепційний дизайн видавництва <span lang="en">Limited Edition:</span> де кожен твір — як об'єкт мистецтва, обережно створений для особливих цінителів естетики й якості.</p>
                 </div>
               </div>
               <div class="portfolio-border">
-                <h2 class="portfolio-list-title">Издание <span lang="en">Limited Edition</span></h2>
+                <h2 class="portfolio-list-title">Видавництво <span lang="en">Limited Edition</span></h2>
                 <p class="portfolio-list-text">Дизайн</p>
               </div>
             </li>
@@ -272,15 +272,15 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/label.jpg 1x,                   
-                    ./static/images/label-2x.jpg 2x
+                    ../static/images/label.jpg 1x,                   
+                    ../static/images/label-2x.jpg 2x
                   "
-                  src="./static/images/label.jpg"
+                  src="../static/images/label.jpg"
                   alt="бирка для чемодана"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text"><span lang="en">LAB:</span> Інноваційна платформа для створення та втілення візуальних концепцій, де кожен проект — це власний експеримент із дизайном, що перетворює ідеї в реальність.</p>
                 </div>
               </div>
               <div class="portfolio-border">
@@ -293,20 +293,20 @@
               <div class="portfolio-description">
                 <img
                   srcset="
-                    ./static/images/leptop.jpg 1x,                   
-                    ./static/images/leptop-2x.jpg 2x
+                    ../static/images/leptop.jpg 1x,                   
+                    ../static/images/leptop-2x.jpg 2x
                   "
-                  src="./static/images/leptop.jpg"
+                  src="../static/images/leptop.jpg"
                   alt="ноутбук"
                   width="450"
                 />
                 <div class="portfolio-overlay">
-                  <p class="portfolio-description-text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
+                  <p class="portfolio-description-text"><span lang="en">Growing Business:</span> Ваш надійний помічник у розвитку бізнесу, забезпечуючи інструменти та ресурси для ефективного зростання і успіху вашої компанії.</p>
                 </div>
               </div>
               <div class="portfolio-border">
                 <h2 class="portfolio-list-title"><span lang="en">Growing Business</span></h2>
-                <p class="portfolio-list-text">Приложение</p>
+                <p class="portfolio-list-text">Додаток</p>
               </div>
             </li>
           </ul>
@@ -330,7 +330,7 @@
                       href="https://goo.gl/maps/CdvJLRiEL6Q8Smko8"
                       target="_blank"
                       rel="noreferrer noopener"
-                      >г.Киев, пр-т Леси Украинки, 26</a
+                      >м. Київ, пр-т Лесі Українки, 26</a
                     >
                   </li>
                   <li class="footer-contact__item">
@@ -349,12 +349,12 @@
               </address>
             </div>
             <div class="social-section">
-              <p class="social-section__text">Присоединяйтесь</p>
+              <p class="social-section__text">приєднуйтесь</p>
               <ul class="footer-list list">
                 <li class="footer-list__item">
                   <a class="footer-list__link" href="">
                     <svg class="footer-list__icon" width="20" height="20">
-                      <use href="./static/images/icons.svg#icon-instagram"></use>
+                      <use href="../static/images/icons.svg#icon-instagram"></use>
                     </svg>
                   </a>
                 </li>
@@ -362,7 +362,7 @@
                 <li class="footer-list__item">
                   <a class="footer-list__link" href="">
                     <svg class="footer-list__icon" width="20" height="20">
-                      <use href="./static/images/icons.svg#icon-twitter"></use>
+                      <use href="../static/images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -370,7 +370,7 @@
                 <li class="footer-list__item">
                   <a class="footer-list__link" href="">
                     <svg class="footer-list__icon" width="20" height="20">
-                      <use href="./static/images/icons.svg#icon-facebook"></use>
+                      <use href="../static/images/icons.svg#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -378,23 +378,23 @@
                 <li class="footer-list__item">
                   <a class="footer-list__link" href="">
                     <svg class="footer-list__icon" width="20" height="20">
-                      <use href="./static/images/icons.svg#icon-linkedin"></use>
+                      <use href="../static/images/icons.svg#icon-linkedin"></use>
                     </svg>
                   </a>
                 </li>
               </ul>
             </div>
             <div class="footer-submit">
-              <p class="footer-submit__text">Подпишитесь на рассылку</p>
+              <p class="footer-submit__text">Підпишіться на розсилку</p>
               <div class="footer-submit__form">
                 <label class="footer-submit__label" for="submit-mail"></label>
                 <input class="footer-submit__input" type="email" name="submit-mail" id="submit-mail" placeholder="E-mail">
-                <button class="footer-submit__btn" type="submit">Подписаться</button>
+                <button class="footer-submit__btn" type="submit">Підписатись</button>
               </div>
             </div>
           </div>
         </div>
       </footer>
-    <script src="./templates/menu.js"></script>
+    <script src="../templates/menu.js"></script>
   </body>
 </html>
