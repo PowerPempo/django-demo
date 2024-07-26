@@ -1,5 +1,6 @@
-from django.shortcuts import render , HttpResponse , redirect
+from django.shortcuts import render , redirect
 from .forms import email_form
+from django.core.mail import send_mail
 
 def main(request):
     return render(request , 'main.html')
@@ -23,7 +24,16 @@ def developers_2(request):
 def save_email(request):
     if request.method == 'POST':
         form = email_form(request.POST)
+        email = request.POST['email']
         if form.is_valid():
+            form.cleaned_data['email']
+            send_mail(
+                'success, noreply',
+                'Thank you for using our site, hope you enjoy features we did! ',
+                'webstudio910@gmail.com',
+                [email],
+                fail_silently=False,
+            )
             form.save()
             return redirect('success') 
     else:
@@ -35,3 +45,5 @@ def save_email(request):
 def success(request):
     return render(request , 'success.html')
     
+
+
