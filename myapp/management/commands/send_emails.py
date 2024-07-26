@@ -10,8 +10,8 @@ class Command(BaseCommand):
 
     def handle(self, *args, **kwargs):
         subscribers = email.objects.all()
-        subject = 'Test Email'
-        message = 'This is a test email.'
+        subject = 'noreply'
+        message = 'Thank you for using our site, hope you enjoy features we did!'
 
         for subscriber in subscribers:
             send_mail(
