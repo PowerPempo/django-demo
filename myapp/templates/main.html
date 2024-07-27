@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="uk">
   <head>
@@ -412,7 +413,7 @@
             <li class="customers__item">
               <a class="customers__link link" href="">
                 <svg class="customers__icon" width="106" height="60">
-                  <use href="../static/icons.svg#icon-yaco"></use>
+                  <use href="./static/icons.svg#icon-yaco"></use>
                 </svg>
               </a>
             </li>
@@ -420,7 +421,7 @@
             <li class="customers__item">
               <a class="customers__link link" href="">
                 <svg class="customers__icon" width="106" height="60">
-                  <use href="../static/images/icons.svg#icon-company"></use>
+                  <use href="./static/images/icons.svg#icon-company"></use>
                 </svg>
               </a>
             </li>
@@ -428,7 +429,7 @@
             <li class="customers__item">
               <a class="customers__link link" href="">
                 <svg class="customers__icon" width="106" height="60">
-                  <use href="../static/images/icons.svg#icon-company2"></use>
+                  <use href="./static/images/icons.svg#icon-company2"></use>
                 </svg>
               </a>
             </li>
@@ -436,7 +437,7 @@
             <li class="customers__item">
               <a class="customers__link link" href="">
                 <svg class="customers__icon" width="106" height="60">
-                  <use href="../static/images/icons.svg#icon-foster"></use>
+                  <use href="./static/images/icons.svg#icon-foster"></use>
                 </svg>
               </a>
             </li>
@@ -444,7 +445,7 @@
             <li class="customers__item">
               <a class="customers__link link" href="">
                 <svg class="customers__icon" width="106" height="60">
-                  <use href="../static/images/icons.svg#icon-brand"></use>
+                  <use href="./static/images/icons.svg#icon-brand"></use>
                 </svg>
               </a>
             </li>
@@ -552,13 +553,12 @@
 
           <form class="form">
             <span class="form-title">Залиште свої данні, ми вам зателефонуємо</span>
-                 
             <div class="form-field top-title">
               <label class="form-label" for="name">Ім'я</label>
               <input class="form-input" type="text" name="name" id="name">
               <svg class="input-icon" width="12" height="12">
                 <use
-                    href="../static/images/icons.svg#icon-name"
+                    href="./static/images/icons.svg#icon-name"
                 ></use>
               </svg>
             </div>
@@ -597,7 +597,8 @@
           </form>
       </div>
     </div>
-    <script src="js/modal.js"></script>
-    <script src="js/menu.js"></script>
+
+<script src="{% static 'js/menu.js'%}"></script>
+<script src="{% static 'js/modal.js'%}"></script>
   </body>
 </html>
