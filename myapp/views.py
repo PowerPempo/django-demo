@@ -1,6 +1,8 @@
 from django.shortcuts import render , redirect
-from .forms import email_form
+from .forms import email_form , ContactForm
 from django.core.mail import send_mail
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
 
 def main(request):
     return render(request , 'main.html')
@@ -47,3 +49,18 @@ def success(request):
     
 
 
+@csrf_exempt
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return JsonResponse({'success': True})
+        else:
+            return JsonResponse({'success': False, 'errors': form.errors})
+    return JsonResponse({'success': False, 'error': 'Invalid request'})
+
+
+
+def send(request):
+    return render(request, 'send.html')
